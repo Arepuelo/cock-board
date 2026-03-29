@@ -17,6 +17,10 @@ viewport.addEventListener("mousemove", (e) => {
         canvas.style.transform = `translate(${x_position}px, ${y_position}px) scale(${zoom})`;
     }
 })
+viewport.addEventListener("wheel", (e) => {
+    zoom *= Math.exp(e.deltaY/10000);
+    canvas.style.transform = `translate(${x_position}px, ${y_position}px) scale(${zoom})`;
+})
 
 add_note.addEventListener("click", () => {
     const note = document.createElement("div")
