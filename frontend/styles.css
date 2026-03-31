@@ -35,4 +35,12 @@
     padding: 10px;
     margin: 10px;
     position: absolute;
+    display: flex;
+}
+
+.note textarea {
+    background: transparent;
+    border: none;
+    resize: none;
+    outline: none;
 }

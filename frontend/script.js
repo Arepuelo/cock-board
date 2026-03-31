@@ -40,11 +40,13 @@ viewport.addEventListener("wheel", (e) => {
 
 add_note.addEventListener("click", () => {
     const note = document.createElement("div")
-    note.textContent = "new note"
     note.classList.add("note")
-    canvas.appendChild(note)
     note_counter++;
-    
+    canvas.appendChild(note)
+
+    let text_note = document.createElement("textarea")
+    note.appendChild(text_note)
+
     note.dataset.x = 10 * note_counter;
     note.dataset.y = 10 * note_counter;
     note.style.left = `${note.dataset.x}px`;
@@ -53,4 +55,6 @@ add_note.addEventListener("click", () => {
         current_note = note;
         e.stopPropagation()
     })
+
+
 })
