@@ -5,21 +5,21 @@
 }
 
 #viewport {
-    background-color: #181824;
+    background-color: white;
     overflow: hidden;
     width: 100%;
     height: 100vh;
 }
 
 #canvas {
-    background-color: #484880;
+    background-color: transparent;
     width: 300px;
     height: 300px;
 }
 
 #add-note {
     cursor: pointer;
-    background-color: #FF6E00;
+    background-color: #efefef;
     width: 100px;
     height: 50px;
     padding: 10px;
@@ -33,7 +33,7 @@
 
 .note {
     background-color: aliceblue;
-    border: 5px dashed #fdf911;
+    border: 1px dashed #767676;
     width: 150px;
     height: 150px;
     resize: both;
