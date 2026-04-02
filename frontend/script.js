@@ -82,8 +82,8 @@ add_note.addEventListener("click", () => {
     drag_handle.addEventListener("mousedown", () => {dragged_note = note_container;})
     toolbar.appendChild(drag_handle)
     
-    note_container.dataset.x = 10 * note_counter;
-    note_container.dataset.y = 10 * note_counter;
+    note_container.dataset.x = 800 + 10 * note_counter;
+    note_container.dataset.y = 150 + 10 * note_counter;
     note_container.style.left = `${note_container.dataset.x}px`;
     note_container.style.top = `${note_container.dataset.y}px`;
 
